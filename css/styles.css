@@ -1,0 +1,98 @@
+/*border box fix -- from LLC HTML&CSS workshop*/
+/*apply a natural box layout model to all elements, but allowing components to change*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*---------------------------------------*/
+
+/*TODO faff around with colours. but not till everything else is done!*/
+/*coolors.co/07beb8-b1ff44-78d5d7-93acb5-bad1cd*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    /*Faux parallax effect -- from LLC HTML&CSS workshop*/
+    /*background: url(../images/mountains.jpg) no-repeat fixed;*/
+    /*background-size: cover;*/
+}
+
+h1 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 50px;
+}
+
+header h1 {
+    font-size: 75px;
+}
+
+h2 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 35 px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5; /* adjusts space between the lines */
+}
+
+a {
+    color: #BAD1CD;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+header,
+section,
+footer {
+  padding: 2.5% 10%;
+}
+
+img {
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+}
+
+/*TODO figure out how bootstrap works w image sizing*/
+#projects img{
+    width: 240px;
+    height: 180px;
+}
+
+/* HEADER
+-----------------------------------------*/
+header {
+    background: #07BEB8;
+}
+
+/* ABOUT
+-----------------------------------------*/
+.about {
+    background:#B1FF44;
+    overflow: hidden;
+}
+
+.profilepic {
+    float: left;
+    margin-right: 20px;
+}
+
+/* PROJECTS
+-----------------------------------------*/
+#projects{
+    background: #BAD1CD;
+}
+
+/* FOOTER
+-----------------------------------------*/
+footer {
+    background: #07BEB8;
+    text-align: center;
+}
